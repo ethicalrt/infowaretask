@@ -5,7 +5,10 @@
 ### Note
 
 ```bash
-  To use all API's except add account & login need to create an account first because all rest of the API's need JWT Auth token.
+  To use all APIs except add account & login need to create an account first because all rest of the APIs need JWT Auth token.
+  In the Following Format
+  1) Set headers
+    "Authorization": "Bearer JWT TOKEN"
 ```
 
   
