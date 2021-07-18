@@ -15,7 +15,7 @@
 ## API Routes
 
 - For Website Owner
-  - To Add Account ``` /admin/addAccount ```
+  - To Add Account ``` /admin/addAccount ``` method ```POST```
     ```
     {
       "name": string,
@@ -26,7 +26,7 @@
       "gender": string
     }
 
-  - To Add Products ``` /admin/addProduct ```
+  - To Add Products ``` /admin/addProduct ``` method ```POST```
 
     ```
     {
@@ -37,10 +37,10 @@
     }
     ```
 
-  - To View Orders ``` /admin/viewOrders ```
+  - To View Orders ``` /admin/viewOrders ``` method ```POST```
   
 - For End User (Customers)
-    - To Add account ``` /user/createAccount ```
+    - To Add account ``` /user/createAccount ``` method ```POST```
 
       ```
       {
@@ -53,7 +53,7 @@
       }
       ```
 
-    - To Login ``` /user/login ```
+    - To Login ``` /user/login ``` method ```POST```
 
       ```
       {
@@ -62,9 +62,9 @@
       }
       ```
 
-    - To Browse Products ``` /user/browseProducts ```
+    - To Browse Products ``` /user/browseProducts ``` method ```POST```
 
-    - To Order Products (No Payment Integration) ``` /user/orderProduct ```
+    - To Order Products (No Payment Integration) ``` /user/orderProduct ``` method ```POST```
 
       ```
       {
@@ -77,7 +77,7 @@
       }
       ```
 
-    - To View Orders ``` /user/viewOrders ```
+    - To View Orders ``` /user/viewOrders ``` method ```POST```
 
       ```
         {
