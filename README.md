@@ -13,21 +13,74 @@
 
 - For Website Owner
   - To Add Account ``` /admin/addAccount ```
+    ```
+    {
+      "name": string,
+      "mobile": number,
+      "email": string,
+      "userType": "A",
+      "password": password,
+      "gender": string
+    }
 
   - To Add Products ``` /admin/addProduct ```
 
-  - To View Orders ``` /admin/viewOrders ```
+    ```
+    {
+      "product_name" : string,
+      "product_desc" : string,
+      "product_price" : number,
+      "created_by" : number(user id)
+    }
+    ```
 
+  - To View Orders ``` /admin/viewOrders ```
+  
 - For End User (Customers)
     - To Add account ``` /user/createAccount ```
 
+      ```
+      {
+        "name": string,
+        "mobile": number,
+        "email": string,
+        "userType": "U",
+        "password": password,
+        "gender": string
+      }
+      ```
+
     - To Login ``` /user/login ```
+
+      ```
+      {
+        "email": email registered with,
+        "password": password
+      }
+      ```
 
     - To Browse Products ``` /user/browseProducts ```
 
     - To Order Products (No Payment Integration) ``` /user/orderProduct ```
 
+      ```
+      {
+        "ordered_product_name" : string,
+        "ordered_product_desc" : string,
+        "ordered_product_price" : number,
+        "ordered_product_id" : number,
+        "status" : number(from 0 to 4),
+        "placed_by" : number(user id)
+      }
+      ```
+
     - To View Orders ``` /user/viewOrders ```
+
+      ```
+        {
+        "userId" : number
+        } 
+      ```
 
 
 
@@ -50,7 +103,7 @@ To Install Dependancies
   
   npm install
       or
-  yarn 
+  yarn install
   
 ```
 To Start Server
