@@ -1,0 +1,32 @@
+{
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "infoware",
+    "jwt_encryption": "sanjeevan@2021",
+    "jwt_expiration": 3600,
+    "host": "localhost",
+    "port": 8889,
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "root",
+    "database": "infoware",
+    "jwt_encryption": "sanjeevan@2021",
+    "jwt_expiration": 3600,
+    "host": "localhost",
+    "port": 8889,
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "root",
+    "database": "infoware",
+    "jwt_encryption": "sanjeevan@2021",
+    "jwt_expiration": 3600,
+    "host": "localhost",
+    "port": 8889,
+    "dialect": "mysql"
+  }
+}
