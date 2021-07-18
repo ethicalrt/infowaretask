@@ -14,7 +14,7 @@ router.get("/", function (req, res, next) {
   });
 });
 
-router.post("/addAccount", passport.authenticate("jwt", { session: false }),  userController.createAccount);
+router.post("/addAccount",  userController.createAccount);
 router.post("/addProduct", passport.authenticate("jwt", { session: false }), ownerController.addProduct);
 router.post("/viewOrders", passport.authenticate("jwt", { session: false }),  ownerController.getOrderList);
 module.exports = router;

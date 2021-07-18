@@ -13,7 +13,7 @@ router.get("/", function (req, res, next) {
   });
   
 
-router.post("/createAccount",  passport.authenticate("jwt", { session: false }), userController.createAccount);
+router.post("/createAccount", userController.createAccount);
 router.post("/login", userController.Login);
 router.post("/browseProducts",  passport.authenticate("jwt", { session: false }), endUserController.browseProducts);
 router.post("/orderProduct",  passport.authenticate("jwt", { session: false }), endUserController.orderProduct);
