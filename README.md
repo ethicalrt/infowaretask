@@ -106,7 +106,7 @@ To Install Dependancies
   
   npm install
       or
-  yarn install
+  yarn
   
 ```
 To Start Server
